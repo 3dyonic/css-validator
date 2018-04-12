@@ -1,0 +1,13 @@
+{
+  "browserSyncOptions": {
+    "proxy": "http://172.24.10.34:8080/",
+    "notify": false
+  },
+  "browserSyncWatchFiles": [
+    "./css/*.min.css"
+  ],
+  "paths": {
+    "css": "../../gemini/coral-gaming-migration/themes/galabingo-theme/src/main/webapp/css/style.raw.css",
+    "dist": "./dist/"
+  }
+}

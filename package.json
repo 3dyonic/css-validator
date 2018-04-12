@@ -1,0 +1,15 @@
+{
+  "name": "gulp-css-validator",
+  "version": "0.0.1",
+  "description": "external css validator",
+  "author": "LCI-CSS",
+  "license": "",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-w3c-css": "^1.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-json-format": "^2.0.0",
+    "gulp-cssbeautify": "^1.0.0",
+    "gulp-rename": "^1.2.2"
+  }
+}
