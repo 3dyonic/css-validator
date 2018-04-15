@@ -9,13 +9,14 @@ var rename = require("gulp-rename");
 // Configuration file to keep your code DRY
 var cfg = require('./gulpconfig.json');
 var paths = cfg.paths;
+var output =cfg.output;
 
 // W3C Validator
 gulp.task('default', function () {
-    gulp.src(paths.css)
+    gulp.src(paths.project + paths.theme + paths.css)
         .pipe(cssbeautify())
         .pipe(validate({warning:'no'}))
         .pipe(jsonFormat(4))
-        .pipe(rename('validator-report.json'))
+        .pipe(rename(output.report))
         .pipe(gulp.dest(paths.dist));
 })
